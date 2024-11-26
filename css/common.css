@@ -40,6 +40,7 @@ p{
     color:#000;
     padding:0.4rem 1.5rem;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 .btn_common.big{
     padding:0.4rem 2rem;
@@ -68,7 +69,48 @@ p{
     background-color: var(--main-color);
     color:#fff;
 }
+.btn_common.popupno{
+    color:#fff;
+    border:1px solid #fff;
+}
+
 .enp{
     color:var(--point-color);
     font-weight: var(--font-thin);
 }
+
+input[type="checkbox"]{
+    display: none;
+}
+label.checkbox{
+    display: inline-flex;
+    /* flex컨테이너가 inline태그처럼 포함하는 컨텐츠 만큼의 너비를 갖게되는 형태 */
+    align-items: center;
+    gap:0.5rem;
+}
+.custom_checkbox{
+    border:1px solid #000;
+    display: block;
+    width:1rem;
+    height:1rem;
+}
+input[type="checkbox"]:checked+.custom_checkbox{
+    background: url("../img/icn_check.svg") no-repeat 50% 50% / 85% auto;
+}
+
+.bbs_pagination{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-small);
+    margin-bottom:var(--space-xlarge);
+}      
+.bbs_pagination a{
+    border:1px solid #000;
+    padding:0.2rem 0.5rem;
+}
+.bbs_pagination a.on{
+    background-color: var(--main-color);
+    color:#fff;
+}
+
+

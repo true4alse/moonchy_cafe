@@ -27,5 +27,21 @@ img,video{
     max-width: 100%;
 }
 input{outline: 0;}
+table{border-collapse: collapse;}
+
+/* 선택했을 때 가장자리에 보더가 없어지는 소스코드 */
+textarea,input,option{
+    outline: 0;
+}
+form,label,input,select,option,textarea{
+    font-family: inherit;
+    font-weight: inherit;
+}
+input[type="submit"]{
+    background-color: transparent;
+}
+input[type="reset"]{
+    background-color: transparent;
+}
 
 

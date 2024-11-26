@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="">
+    <aside class="fixed_menu"></aside>
+    <div class="header_wrap"></div>
+    <main>
+        <div class="sub_banner sub1">
+            <div class="ban_txt">
+                <h2>공지사항</h2>
+                <p>여러분과의 소통을 통해 더 나은 내일을 만들어가는 이야기, 지금 확인해 보세요.</p>
+            </div>
+        </div>
+
+        <div class="commonFrame option_bar">
+            <label for="fixed_list" class="checkbox">
+                <input type="checkbox" id="fixed_list">
+                <span class="custom_checkbox"></span>
+                공지알림
+            </label>
+        </div>
+
+        <form action="#" class="commonFrame">
+            <div class="form_title">
+                <label for="title">제목</label>
+                <input type="text" id="title" placeholder="제목을 입력해주세요.">
+            </div>
+            <div class="form_desc">
+                <label for="desc">게시글 내용</label>
+                <textarea id="desc" placeholder="공지사항 내용을 입력해주세요."></textarea>
+            </div>
+        </form>
+
+        <div class="form_submit commonFrame">
+            <input type="submit" value="작성완료" class="btn_common" id="submit_write">
+            <a href="/notice_list.html" class="btn_common">작성취소</a>
+        </div>
+        <script>
+            // 임시기능
+            document.querySelector("#submit_write").addEventListener("click",function(){
+                location.href = "/notice_list.html"
+            })
+        </script>
+        
+    </main>
+    <footer></footer>
+    <script src="/js/include.js"></script>
+</body>
+</html>
