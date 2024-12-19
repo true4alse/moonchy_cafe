@@ -113,4 +113,16 @@ input[type="checkbox"]:checked+.custom_checkbox{
     color:#fff;
 }
 
+input[type="text"]{
+    padding:0.4rem 0.6rem;
+    border-radius: 0;
+    max-width: 120px;
+    border: 1px solid #000;
+}
+select{
+    outline: 0;
+    padding:0.4rem 0.6rem;
+    border-radius: 0;
+    max-width: 120px;
+}
 

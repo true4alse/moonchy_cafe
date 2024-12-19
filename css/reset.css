@@ -44,4 +44,8 @@ input[type="reset"]{
     background-color: transparent;
 }
 
+button{
+    font-family: inherit;
+}
+
 
